@@ -1,4 +1,5 @@
 require("./xyz.js")
-var name1="snehil"
-console.log(name1)
-console.log(a)
+console.log("inside App.js")
+var a=10
+var b=20
+calculateSum(a,b)
