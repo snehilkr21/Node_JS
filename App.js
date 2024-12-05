@@ -1,5 +1,6 @@
-require("./xyz.js")
+let obj=require("./xyz.js")
 console.log("inside App.js")
 var a=10
 var b=20
-calculateSum(a,b)
+obj.calculateSum(a,b)
+console.log(obj.x)
