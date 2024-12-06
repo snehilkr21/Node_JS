@@ -1,4 +1,5 @@
-let {calculateSum}=require("./xyz.js")
+// let {calculateSum}=require("./xyz.js")
+import {calculateSum} from "./xyz.js"
 console.log("inside App.js")
 var a=10
 var b=20
