@@ -4,6 +4,5 @@ function calculateSum(a,b){
 }
 var x=100;
 module.exports = {
-    x:x,
     calculateSum:calculateSum
 }
