@@ -5,5 +5,5 @@ var myName ="snehil"
 let a =10;
 let b=30;
 multiply(a,b)
-console.log(myName,temp)
+console.log(myName,temp,"snehil")
 calculateSum(a,b)
