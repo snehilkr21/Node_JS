@@ -1,5 +1,6 @@
-const {calculateSum,temp,multiply} = require("./Calculate/index")
-
+const {calculateSum,temp,multiply} = require("./Calculate")
+const data = require("./data.json")
+console.log(JSON.stringify(data))
 var myName ="snehil"
 let a =10;
 let b=30;
