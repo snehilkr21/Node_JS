@@ -1,6 +1,8 @@
-const {calculateSum,temp} = require("./CalculateSum")
+// const {calculateSum,temp} = require("./CalculateSum")
+import { multiply } from "./CalculateMultiply.js";
 var myName ="snehil"
 let a =10;
 let b=30;
-console.log(myName,temp)
-calculateSum(a,b)
+multiply(a,b)
+// console.log(myName,temp)
+// calculateSum(a,b)
