@@ -1,27 +1,17 @@
-const fs = require("fs")
-const https = require("https")
+const crypto = require("crypto")
+console.log("hello world")
 
-console.log("Hello World")
-
-var a = 10;
-var b = 20;
-
-https.get("https://jsonplaceholder.typicode.com/posts/1",(res)=>{
-    console.log("data fetched", res)
+var a =10;
+var b=20;
+crypto.pbkdf2("password1","salt",500000,50,"sha512",(err,key)=>{
+    console.log("key generated ",key)
 })
 
-setTimeout(()=>{
-console.log("settimeout")
-},2000)
-
-fs.readFile("./file.txt","utf8",(err,data)=>{
-    console.log("data",data)
-})
-
-function multiply(x,y){
-    const result = x*y
-    return result
+function multiplication(x,y){
+    const result = x*y;
+    return result;
 }
 
-var c = multiply(a,b)
-console.log("Multiplication result is ",c)
+var c= multiplication(a,b)
+
+console.log("Multiplication result ", c)
