@@ -3,7 +3,7 @@ const a = 100;
 
 setImmediate(()=>console.log("Immediate"))
 setTimeout(()=>console.log("timeout"),0)
-Promise.resolve("Promise")
+Promise.resolve("Promise").then(console.log)
 
 fs.readFile("./file.tsx","utf8",()=>{
     setTimeout(()=>console.log("2nd timeout"),0)
