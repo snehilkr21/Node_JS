@@ -18,6 +18,8 @@ fs.readFile("./file.txt","utf-8",(err,data)=>{
     console.log("file  ",data)
 })
 
+const syncFileReadData = fs.readFileSync("./file.txt","utf-8")
+console.log("syncFileReadData ",syncFileReadData)
 var a=100;
 var b=200;
 function multiplication(a,b){
