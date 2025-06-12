@@ -1,6 +1,11 @@
 const fs=require("fs")
 const a =100
-setImmediate(()=>console.log("setImmdediate"))
+setImmediate(()=>{
+    setImmediate(()=>{
+        console.log("inner setImmdediate")
+    })
+    console.log("setImmdediate")
+})
 fs.readFile("./file.txt","utf-8",()=>{
     console.log("file read")
 })
