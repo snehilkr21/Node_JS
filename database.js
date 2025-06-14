@@ -26,6 +26,16 @@ async function main() {
   const findResult = await collection.find({}).toArray();
   console.log("Found documents =>", findResult);
 
+  //inset the another data
+  const data = {
+    firstName: "shashank",
+    lastName: "raj",
+    city: "hajipur",
+    phoneNumbe: "1234567890",
+  };
+  const insertResult = await collection.insertMany([data]);
+  console.log("Inserted documents =>", insertResult);
+
   return "done.";
 }
 
